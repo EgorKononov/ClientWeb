@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+p {
+    text-indent: 20px;
+}
+
+.mainBlock {
+    width: 850px;
+    height: 465px;
+    overflow: auto;
+    padding: 12px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.3;
+    text-align: justify;
+    background-color: #feeed6;
+}
+
+.block:not(:last-child) {
+    margin: 10px 0;
+}
+
+.mainHeader {
+    font-size: 36px;
+    line-height: 1;
+}
+
+.blueBoldText {
+    color: #378db2;
+    font-weight: bold;
+}
+
+.largeText {
+    margin: 10px 0;
+    font-size: 19px;
+}
+
+.crossedOutText {
+    text-decoration: line-through;
+}
+
