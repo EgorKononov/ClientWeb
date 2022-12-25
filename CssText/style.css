@@ -24,6 +24,7 @@ p {
 }
 
 .mainHeader {
+    margin: 0;
     font-size: 36px;
     line-height: 1;
 }
