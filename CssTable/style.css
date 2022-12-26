@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.mainTable {
+    width: 860px;
+    border-collapse: collapse;
+    border: 1px solid #aec2cf;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 24px;
+    text-align: left;
+}
+
+.mainTable th {
+    border: 1px solid #aec2cf;
+    background-color: #3498db;
+}
+
+.mainTable td {
+    border: 1px solid #aec2cf;
+}
+
+.mainTable tr:nth-of-type(odd) {
+    background-color: #eeeeee;
+}
+
+.mainTable th, td {
+    padding: 11px 14px;
+}
+
+.whiteText {
+    color: white;
+}
