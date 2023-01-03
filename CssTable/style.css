@@ -3,8 +3,10 @@
     margin: 0;
 }
 
-.mainTable {
+.main_table {
     width: 860px;
+    margin: auto;
+    overflow: auto;
     border-collapse: collapse;
     border: 1px solid #aec2cf;
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
@@ -12,23 +14,21 @@
     text-align: left;
 }
 
-.mainTable th {
+.main_table th {
     border: 1px solid #aec2cf;
+    color: #fff;
     background-color: #3498db;
 }
 
-.mainTable td {
+.main_table td {
     border: 1px solid #aec2cf;
 }
 
-.mainTable tr:nth-of-type(odd) {
-    background-color: #eeeeee;
+.main_table tr:nth-of-type(odd) {
+    background-color: #eee;
 }
 
-.mainTable th, td {
+.main_table th,
+.main_table td {
     padding: 11px 14px;
-}
-
-.whiteText {
-    color: white;
 }
