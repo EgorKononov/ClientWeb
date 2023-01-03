@@ -3,10 +3,14 @@
     margin: 0;
 }
 
-.main_table {
-    width: 860px;
+.block{
+    max-width: 860px;
     margin: auto;
     overflow: auto;
+}
+
+.main_table {
+    width: 100%;
     border-collapse: collapse;
     border: 1px solid #aec2cf;
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
