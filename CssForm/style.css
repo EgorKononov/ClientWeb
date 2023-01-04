@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.main_block {
+    max-width: 845px;
+    margin: auto;
+    overflow: auto;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    text-align: left;
+    color: #8B7584;
+}
+
+.header {
+    padding: 2px 22px;
+    font-size: 32px;
+    color: #676565;
+}
+
+.form{
+    background-color: #feeed6;
+    padding: 19px 22px 12px;
+}
+
+.form_field_label{
+    font-weight: bold;
+}
+
+.form_field{
+    margin-top: 4px;
+    margin-bottom: 19px;
+    padding: 8px 12px;
+    width: 100%;
+}
+
+.form_multiline_field{
+    height: 130px;
+}
+
+.form_button_block{
+    margin-top: 6px;
+    text-align: right;
+}
+
+.form_button{
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #378db2;
+    color: #fff;
+    background-color: #378db2;
+}
