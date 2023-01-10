@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+.margin{
+    margin: 10px 10px;
+}
+
+.margin-horizontal{
+    margin: 0 10px;
+}
+
+.margin-vertical{
+    margin: 10px 0;
+}
