@@ -43,6 +43,10 @@
     font-size: 19px;
 }
 
+.large_margin {
+    margin-top: 16px;
+}
+
 .crossed_out_text {
     text-decoration: line-through;
 }
