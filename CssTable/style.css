@@ -28,7 +28,7 @@
     border: 1px solid #aec2cf;
 }
 
-.main_table tr:nth-of-type(odd) {
+.main_table tr:nth-child(odd) {
     background-color: #eee;
 }
 
