@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+.margin {
+    margin: 10px 10px;
+}
+
+.margin-horizontal {
+    margin: 0 10px;
+}
+
+
+.margin-vertical {
+    margin: 10px 0;
+}
+
+.form > * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.error-message {
+    color: #f00;
+    display: none;
+}
