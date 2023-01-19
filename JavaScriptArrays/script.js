@@ -10,13 +10,13 @@
     console.log("Подмассив из первых пяти элементов массива 1: " + array1.slice(0, 5));
     console.log("Подмассив из последних пяти элементов массива 1: " + array1.slice(array1.length - 5, array1.length));
 
-    var sum = array1.filter(function (e) {
+    var evenElementsSum = array1.filter(function (e) {
             return e % 2 === 0;
-        }).reduce(function (element1, element2) {
-            return element1 + element2;
+        }).reduce(function (sum, currentElement) {
+            return sum + currentElement;
         }, 0);
 
-    console.log("Сумма четных элементов массива 1: " + sum);
+    console.log("Сумма четных элементов массива 1: " + evenElementsSum);
 
     var array2 = [];
 
