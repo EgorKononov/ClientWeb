@@ -1,30 +1,36 @@
 (function () {
-    var array = [5, 67, 982, 657, 25, 724, 45, 8, 6, 2, 56, 78, 9, 88, 75, 247, 258, 840, 47, 26658, 354, 6, 699, 85];
-    console.log("Исходный массив 1: " + array);
-    console.log("Массив 1, отсортированный по убыванию: " + array.slice().sort(function (a, b) {
-        return b - a;
-    }))
-    console.log("Подмассив из первых пяти элементов массива 1: " + array.slice().splice(0, 5));
-    console.log("Подмассив из последних пяти элементов массива 1: " + array.slice().splice(array.length - 5, 5));
-    console.log("Сумма четных элементов массива 1: " + array.filter(function (e) {
-        return e % 2 === 0 || e === 0;
-    }).reduce(function (a, b) {
-        return a + b;
-    }));
-})();
-(function () {
-    var array = [];
+    var array1 = [5, 67, 982, 657, 25, 724, 45, 8, 6, 2, 56, 78, 9, 88, 75, 247, 258, 840, 47, 26658, 354, 6, 699, 85];
+    console.log("Исходный массив 1: " + array1);
+
+    array1.sort(function (element1, element2) {
+            return element2 - element1;
+        });
+
+    console.log("Массив 1, отсортированный по убыванию: " + array1);
+    console.log("Подмассив из первых пяти элементов массива 1: " + array1.slice(0, 5));
+    console.log("Подмассив из последних пяти элементов массива 1: " + array1.slice(array1.length - 5, array1.length));
+
+    var sum = array1.filter(function (e) {
+            return e % 2 === 0;
+        }).reduce(function (element1, element2) {
+            return element1 + element2;
+        }, 0);
+
+    console.log("Сумма четных элементов массива 1: " + sum);
+
+    var array2 = [];
 
     for (var i = 1; i <= 100; i++) {
-        array.push(i);
+        array2.push(i);
     }
 
-    console.log("Исходный массив 2: " + array);
-    var array2 = [];
-    array.filter(function (e) {
-        return e % 2 === 0 || e === 0;
-    }).forEach(function (e) {
-        return array2.push(e * e);
-    });
-    console.log("Список квадратов четных элементов массива 2: " + array2);
+    console.log("Исходный массив 2: " + array2);
+
+    var array3 = array2.filter(function (e) {
+            return e % 2 === 0;
+        }).map(function (e) {
+            return e * e;
+        });
+
+    console.log("Список квадратов четных элементов массива 2: " + array3);
 })();
