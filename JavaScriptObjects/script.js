@@ -52,36 +52,35 @@
     console.log("Массив стран:");
     console.log(countries);
 
-    var countriesWithMaxCitiesCount = [];
-    var maxCitiesCount = 0;
+    function getCountriesWithMaxCitiesCount(countries) {
+        var maxCitiesCount = 0;
 
-    countries.forEach(function (e) {
-        if (e.cities.length > maxCitiesCount) {
-            maxCitiesCount = e.cities.length;
-        }
-    });
-
-    countries.forEach(function (e) {
-        if (e.cities.length === maxCitiesCount) {
-            countriesWithMaxCitiesCount.push(e);
-        }
-    });
-
-    console.log("Страны с наибольшим количеством городов:");
-    console.log(countriesWithMaxCitiesCount);
-
-    var countriesMap = new Map();
-
-    countries.forEach(function (e) {
-        var totalPopulation = 0;
-
-        e.cities.forEach(function (e) {
-            totalPopulation += e.population;
+        countries.forEach(function (country) {
+            if (country.cities.length > maxCitiesCount) {
+                maxCitiesCount = country.cities.length;
+            }
         });
 
-        countriesMap.set(e.name, totalPopulation);
-    });
+        return countries.filter(function (country) {
+                return country.cities.length === maxCitiesCount;
+            });
+    }
+
+    console.log("Страны с наибольшим количеством городов:");
+    console.log(getCountriesWithMaxCitiesCount(countries));
+
+    function getTotalPopulation(countries) {
+        var totalPopulation = {};
+
+        countries.forEach(function (country) {
+            totalPopulation[country.name] = country.cities.reduce(function (sum, currentCity) {
+                return sum + currentCity.population;
+            }, 0);
+        });
+
+        return totalPopulation;
+    }
 
     console.log("Суммарная численность по странам:");
-    console.log(countriesMap);
+    console.log(getTotalPopulation(countries));
 })();
