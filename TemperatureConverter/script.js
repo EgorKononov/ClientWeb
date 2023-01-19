@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function (){
-    let form = document.getElementById("form");
+    var form = document.getElementById("form");
     var celsiusTemperatureField = document.getElementById("celsius-temperature-field");
     var convertButton = document.getElementById("convert-button");
     var kelvinTemperatureLabel = document.getElementById("kelvin-temperature-label");

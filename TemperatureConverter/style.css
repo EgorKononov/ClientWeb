@@ -2,14 +2,14 @@
     box-sizing: border-box;
 }
 
-.margin{
-    margin: 10px 10px;
+.margin {
+    margin: 10px;
 }
 
-.margin-horizontal{
+.margin-horizontal {
     margin: 0 10px;
 }
 
-.margin-vertical{
+.margin-vertical {
     margin: 10px 0;
 }
