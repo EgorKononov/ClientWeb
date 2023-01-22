@@ -2,25 +2,70 @@
     box-sizing: border-box;
 }
 
-.margin {
-    margin: 10px 10px;
-}
-
-.margin-horizontal {
-    margin: 0 10px;
-}
-
-
 .margin-vertical {
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
-.form > * {
+.main-block {
+    max-width: 800px;
+    margin: auto;
+    overflow: auto;
+}
+
+.header {
+    text-align: center;
+}
+
+.block {
+    width: 100%;
+    padding: 1%;
+}
+
+.new-todo-field-label {
+    width: 16%;
+}
+
+.new-todo-field-block {
+    width: 60%;
+    margin: 0 1%;
+}
+
+#new-todo-field {
+    width: 100%;
+}
+
+#add-button {
+    width: 20%;
+}
+
+#form > * {
     display: inline-block;
     vertical-align: top;
+}
+
+.invalid {
+    border-color: #f00;
 }
 
 .error-message {
     color: #f00;
     display: none;
+}
+
+.todo-item-block,
+.edit-todo-item {
+    display: inline-block;
+    width: 66%;
+    padding: 1%;
+    overflow: auto;
+    word-break: break-all;
+}
+
+.delete-button,
+.edit-button,
+.save-button,
+.cancel-button {
+    width: 15%;
+    margin: 0 1%;
+    vertical-align: top;
 }
