@@ -10,10 +10,11 @@
 <body>
 <h1 class="margin">Перевод температуры</h1>
 <form id="form">
-    <label class="margin-horizontal">
-        Температура по Цельсию
+    <label for="celsius-temperature-field" class="margin-horizontal"> Температура по Цельсию</label>
+    <div>
         <input id="celsius-temperature-field" type="number" step="any" class="margin-horizontal">
-    </label>
+        <div id="error-message" class="error-message">Заполните поле</div>
+    </div>
     <button id="convert-button" type="submit">Перевести</button>
 </form>
 <p class="margin-vertical">

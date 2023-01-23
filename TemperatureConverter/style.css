@@ -13,3 +13,17 @@
 .margin-vertical {
     margin: 10px 0;
 }
+
+#form > * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.invalid {
+    border-color: #f00;
+}
+
+.error-message {
+    color: #f00;
+    display: none;
+}
