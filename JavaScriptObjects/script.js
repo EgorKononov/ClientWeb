@@ -53,17 +53,19 @@
     console.log(countries);
 
     function getCountriesWithMaxCitiesCount(countries) {
-        var maxCitiesCount = 0;
+        var maxCitiesCount = countries.reduce(function (max, country) {
+            var citiesCount = country.cities.length;
 
-        countries.forEach(function (country) {
-            if (country.cities.length > maxCitiesCount) {
-                maxCitiesCount = country.cities.length;
+            if (citiesCount > max) {
+                max = citiesCount;
             }
-        });
+
+            return max;
+        }, 0);
 
         return countries.filter(function (country) {
-                return country.cities.length === maxCitiesCount;
-            });
+            return country.cities.length === maxCitiesCount;
+        });
     }
 
     console.log("Страны с наибольшим количеством городов:");
@@ -73,8 +75,8 @@
         var totalPopulation = {};
 
         countries.forEach(function (country) {
-            totalPopulation[country.name] = country.cities.reduce(function (sum, currentCity) {
-                return sum + currentCity.population;
+            totalPopulation[country.name] = country.cities.reduce(function (sum, city) {
+                return sum + city.population;
             }, 0);
         });
 
